@@ -1,4 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
-ReactDOM.render(<App />, document.querySelector('#root') as Element);
+import 'antd/dist/antd.css';
+createRoot(document.querySelector('#root') as Element).render(<App />);

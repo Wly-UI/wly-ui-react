@@ -11,10 +11,14 @@
 			"strictNullChecks": true,
 			"moduleResolution": "node",
 			"baseUrl": "./",
-			"typeRoots": ["node_modules/@types"],
+			"typeRoots": [
+				"node_modules/@types"
+			],
 			"esModuleInterop": true
 		},
-		"exclude": ["node_modules"],
+		"exclude": [
+			"node_modules"
+		],
 		"include": [
 			"config/*"
 		]
@@ -30,11 +34,53 @@
 		"strictNullChecks": true,
 		"moduleResolution": "node",
 		"baseUrl": "./",
-		"typeRoots": ["node_modules/@types"],
+		"typeRoots": [
+			"node_modules/@types"
+		],
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
 		"experimentalDecorators": true
 	},
-	"exclude": ["node_modules", "config/*"],
-	"include": ["src/*"]
+	"paths": {
+		"@/*": [
+			"src/*"
+		],
+		"src/*": [
+			"src/*"
+		],
+		"apis/*": [
+			"src/apis/*"
+		],
+		"components/*": [
+			"src/components/*"
+		],
+		"config/*": [
+			"src/config/*"
+		],
+		"hook/*": [
+			"src/hook/*"
+		],
+		"router/*": [
+			"src/router/*"
+		],
+		"store/*": [
+			"src/store/*"
+		],
+		"theme/*": [
+			"src/theme/*"
+		],
+		"util/*": [
+			"src/util/*"
+		],
+		"views/*": [
+			"src/views/*"
+		],
+	},
+	"exclude": [
+		"node_modules",
+		"config/*"
+	],
+	"include": [
+		"src/*"
+	]
 }
