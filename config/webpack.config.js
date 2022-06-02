@@ -1,16 +1,20 @@
 // webpack.config.js
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin').CleanWebpackPlugin;
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
 	target: 'web', // 默认打包成web平台的
 	mode: 'production', // 环境 development 和 production 环境 链接： https://www.webpackjs.com/concepts/mode/#mode-development
-	entry: path.resolve(__dirname, '../src/components/index.tsx'), // 文件的入口
+	entry: path.resolve(__dirname, '../src/components/index.ts'), // 文件的入口
 	output: {
-		filename: 'js/[name].[chunkhash:8].js', // 文件名
-		path: path.resolve(__dirname, '../dist') // 文件输出地址
+		filename: 'index.js', // 文件名
+		path: path.resolve(__dirname, '../dist'), // 文件输出地址
+		library: {
+			type: 'module'
+		},
+		clean: true
 	},
+	experiments: { outputModule: true },
 	module: {
 		rules: [
 			{
@@ -49,16 +53,12 @@ module.exports = {
 			},
 			{
 				test: /\.css$/, // css 样式
-				use: [
-					MiniCssExtractPlugin.loader, // 'style-loader', 因为我们直接用的 mode是'production' 所以就直接替换了
-					'css-loader',
-					'postcss-loader'
-				]
+				use: ['style-loader', 'css-loader', 'postcss-loader']
 			},
 			{
 				test: /\.less$/i, // less 样式
 				use: [
-					MiniCssExtractPlugin.loader, // 'style-loader',
+					'style-loader',
 					'css-loader',
 					'postcss-loader',
 					'less-loader',
@@ -74,24 +74,18 @@ module.exports = {
 	},
 	plugins: [
 		new CleanWebpackPlugin(),
-		new HtmlWebpackPlugin({
-			title: '主题工具',
-			filename: 'index.html',
-			template: path.resolve(__dirname, './index.ejs'),
-			hash: true,
-			cache: false,
-			inject: true,
-			minify: {
-				removeComments: true,
-				removeAttributeQuotes: true,
-				collapseWhitespace: true,
-				minifyJS: true, // 在脚本元素和事件属性中缩小JavaScript(使用UglifyJS)
-				minifyCSS: true // 缩小CSS样式元素和样式属性
-			},
-			nodeModules: path.resolve(__dirname, '../node_modules')
-		}),
-		//...
-		new MiniCssExtractPlugin({ filename: 'css/[name].[contenthash:8].css' }) // 设置文件存放的位置和名称
+		new CopyWebpackPlugin({
+			patterns: [
+				{
+					from: 'README.md',
+					to: path.resolve(__dirname, '../dist')
+				},
+				{
+					from: 'type',
+					to: path.resolve(__dirname, '../dist')
+				}
+			]
+		})
 	],
 	resolve: {
 		alias: {

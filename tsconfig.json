@@ -39,7 +39,10 @@
 		],
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
-		"experimentalDecorators": true
+		"experimentalDecorators": true,
+		"declaration": true,
+		"declarationDir": "dist",
+		"declarationMap": true,
 	},
 	"paths": {
 		"@/*": [
