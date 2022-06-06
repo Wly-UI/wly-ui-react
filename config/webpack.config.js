@@ -57,18 +57,7 @@ module.exports = {
 			},
 			{
 				test: /\.less$/i, // less 样式
-				use: [
-					'style-loader',
-					'css-loader',
-					'postcss-loader',
-					'less-loader',
-					{
-						loader: 'style-resources-loader',
-						options: {
-							patterns: path.resolve(__dirname, '../src/theme/css/global.less')
-						}
-					}
-				]
+				use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader']
 			}
 		]
 	},
@@ -78,10 +67,6 @@ module.exports = {
 			patterns: [
 				{
 					from: 'README.md',
-					to: path.resolve(__dirname, '../dist')
-				},
-				{
-					from: 'type',
 					to: path.resolve(__dirname, '../dist')
 				}
 			]

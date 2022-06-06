@@ -1,14 +1,12 @@
 {
   "name": "wly-ui-react",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "repository": "git@github.com:Wly-UI/wly-ui-react.git",
   "author": "wangliuyuan <wangliuyuanperson@163.com>",
   "license": "MIT",
   "private": false,
-  "types": "./type/type.d.ts",
   "files": [
-    "src",
     "dist"
   ],
   "scripts": {
@@ -57,7 +55,8 @@
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0",
-    "webpack-merge": "^5.8.0"
+    "webpack-merge": "^5.8.0",
+    "copy-webpack-plugin": "^11.0.0"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -65,5 +64,5 @@
   },
   "publishConfig": {
     "registry": "http://localhost:8888/"
- }
+  }
 }
