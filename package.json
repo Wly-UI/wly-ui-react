@@ -1,6 +1,6 @@
 {
   "name": "wly-ui-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "repository": "git@github.com:Wly-UI/wly-ui-react.git",
   "author": "wangliuyuan <wangliuyuanperson@163.com>",
@@ -47,8 +47,7 @@
     "postcss": "^8.4.14",
     "postcss-loader": "^7.0.0",
     "prettier": "^2.6.2",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    
     "style-loader": "^3.3.1",
     "style-resources-loader": "^1.5.0",
     "ts-node": "^10.8.0",
@@ -59,9 +58,16 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "@ant-design/icons": "^4.7.0",
     "antd": "^4.20.7",
     "react-router-dom": "^6.3.0"
+  },
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "antd": "^4.20.7"
   },
   "publishConfig": {
     "registry": "http://localhost:8888/"
