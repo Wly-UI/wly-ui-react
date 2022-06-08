@@ -13,7 +13,7 @@ module.exports = {
 	plugins: [
 		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
-			title: '主题工具',
+			title: 'WLYUI',
 			filename: 'index.html',
 			template: path.resolve(__dirname, './index.ejs'),
 			hash: true,
