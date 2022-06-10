@@ -19,7 +19,7 @@ const routes: RoutersType = [
 		name: 'Home'
 	},
 	{
-		path: 'app',
+		path: 'Components',
 		element: <App />,
 		name: 'Components',
 		children: [
