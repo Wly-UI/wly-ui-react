@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../../../assets/image/logo.png';
+import logo from '../../../../assets/image/logo.png';
 import './index.less';
 const Logo: React.FC<any> = (props) => {
 	return (
