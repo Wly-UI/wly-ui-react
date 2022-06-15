@@ -1,19 +1,22 @@
-import React, { FC, ReactNode } from 'react';
-import { Form } from 'antd';
-import { FormProps } from 'antd';
+import React, { ReactNode } from 'react';
+import { Form, FormProps } from 'antd';
+import { FormInstance } from 'antd';
 import './index.less';
+
 interface WlyFormProps extends FormProps {
 	wlyClassName?: string;
-	// children?: ReactNode;
+	children?: ReactNode;
+	useForm?: FormInstance<any>;
 }
-const WlyForm: FC<WlyFormProps> = (props) => {
-	const wlyProps = { ...props };
+const WlyForm = (props: WlyFormProps) => {
+	const { useForm = undefined, className = '', ...wlyProps } = { ...props };
 	delete wlyProps.wlyClassName;
-	let className = props?.className ?? '';
 	let wlyClassName = props?.wlyClassName ?? '';
 	let concatClass = className + (className && wlyClassName ? ' ' : '') + wlyClassName;
 	const resClassName = concatClass ? concatClass + ' wly-form' : 'wly-form';
-
 	return <Form {...wlyProps} className={resClassName}></Form>;
 };
-export { WlyForm };
+WlyForm.useForm = Form.useForm;
+const WlyFormItem = Form.Item;
+
+export { WlyForm, WlyFormItem };
