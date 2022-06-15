@@ -1,7 +1,6 @@
 import { WlyTable } from 'src/components';
 
 import React, { FC } from 'react';
-import exp from 'constants';
 
 const DTable: FC<any> = (props) => {
 	const dataSource = [
@@ -38,7 +37,10 @@ const DTable: FC<any> = (props) => {
 	];
 
 	return (
-		<WlyTable dataSource={dataSource} columns={columns} pagination={{ pageSize: 1 }} bordered />
+		<div className='table'>
+			<WlyTable dataSource={dataSource} columns={columns} pagination={{ pageSize: 1 }} bordered />
+			<WlyTable />
+		</div>
 	);
 };
 
