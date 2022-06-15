@@ -7,6 +7,8 @@ import DNotiFiction from 'src/views/DNotifaation';
 import { DTable } from 'src/views/DTable';
 
 import DInput from 'src/views/DInput';
+import DForm from 'src/views/DForm';
+import DTabs from 'src/views/DTabs';
 
 const routes: RoutersType = [
 	{
@@ -46,6 +48,16 @@ const routes: RoutersType = [
 				path: 'dinput',
 				element: <DInput />,
 				name: 'DINPUT'
+			},
+			{
+				path: 'dform',
+				element: <DForm />,
+				name: 'DForm'
+			},
+			{
+				path: 'dtabs',
+				element: <DTabs />,
+				name: 'DTABS'
 			}
 		]
 	}

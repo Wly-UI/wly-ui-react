@@ -2,7 +2,7 @@ import React from 'react';
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { routes } from './routes';
 import { RoutersType, RouteType } from '../types';
-import LayOut from '../components/business/LayOut';
+import LayOut from '../business/LayOut';
 
 const renderRoutes = (routes: RoutersType) => {
 	return routes.map((route: RouteType, index: number) => {
