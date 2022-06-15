@@ -39,6 +39,18 @@ const DInput = () => {
 					}}
 				/>
 			</div>
+			<div className='input-contain'>
+				<div>
+					<br />
+				</div>
+				prefix{'   '}
+				<WlyInput
+					addonBefore={'prefix'}
+					onClick={() => {
+						console.log('click');
+					}}
+				/>
+			</div>
 		</div>
 	);
 };
