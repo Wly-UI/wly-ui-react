@@ -1,17 +1,10 @@
 import React from 'react';
-import { wlyNotiFiction } from './components/index';
-const App = () => {
+import { Outlet } from 'react-router-dom';
+
+export default () => {
 	return (
-		<div
-			className='app'
-			onClick={() => {
-				wlyNotiFiction['error']({
-					message: 'err',
-					duration: null
-				});
-			}}>
-			app
+		<div className='div-container'>
+			<Outlet />
 		</div>
 	);
 };
-export default App;

@@ -11,22 +11,15 @@
 			"strictNullChecks": true,
 			"moduleResolution": "node",
 			"baseUrl": "./",
-			"typeRoots": [
-				"node_modules/@types"
-			],
+			"typeRoots": ["node_modules/@types"],
 			"esModuleInterop": true
 		},
-		"exclude": [
-			"node_modules"
-		],
-		"include": [
-			"config/*"
-		]
+		"exclude": ["node_modules"],
+		"include": ["config/*"]
 	},
 	"compilerOptions": {
-		"outDir": "./dist/",
-		"target": "es6",
-		"module": "esnext",
+		"module": "commonjs",
+		"target": "es5",
 		"jsx": "react",
 		"sourceMap": true,
 		"removeComments": true,
@@ -35,56 +28,11 @@
 		"strictNullChecks": true,
 		"moduleResolution": "node",
 		"baseUrl": "./",
-		"typeRoots": [
-			"node_modules/@types"
-		],
+		"typeRoots": ["node_modules/@types"],
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
-		"experimentalDecorators": true,
-		"declaration": true,
-		"declarationDir": "dist",
-		"declarationMap": true,
+		"experimentalDecorators": true
 	},
-	"paths": {
-		"@/*": [
-			"src/*"
-		],
-		"src/*": [
-			"src/*"
-		],
-		"apis/*": [
-			"src/apis/*"
-		],
-		"components/*": [
-			"src/components/*"
-		],
-		"config/*": [
-			"src/config/*"
-		],
-		"hook/*": [
-			"src/hook/*"
-		],
-		"router/*": [
-			"src/router/*"
-		],
-		"store/*": [
-			"src/store/*"
-		],
-		"theme/*": [
-			"src/theme/*"
-		],
-		"util/*": [
-			"src/util/*"
-		],
-		"views/*": [
-			"src/views/*"
-		],
-	},
-	"exclude": [
-		"node_modules",
-		"config/*"
-	],
-	"include": [
-		"src/*"
-	]
+	"exclude": ["node_modules", "config/*"],
+	"include": ["src/**/*"]
 }

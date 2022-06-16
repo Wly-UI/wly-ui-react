@@ -1,0 +1,33 @@
+.wly-button.ant-btn {
+	background: var(--button-background);
+	color: var(--button-color);
+	border-color: var(--button-border-color);
+	transition: none;
+	&:hover {
+		background: var(--button-hover-background);
+		color: var(--button-hover-color);
+		border-color: var(--button-hover-border-color);
+	}
+	&:active {
+		background: var(--buton-background);
+		color: var(--button-color);
+		border-color: var(--button-border-color);
+	}
+}
+[ant-click-animating-without-extra-node='true']::after {
+	animation: none;
+	-webkit-animation: none;
+}
+.wly-button.ant-btn.ant-btn-primary {
+	background: var(--button-primary-background);
+	&:hover {
+		background: var(--button-hover-background);
+		color: var(--button-hover-color);
+		border-color: var(--button-hover-border-color);
+	}
+	&:active {
+		background: var(--buton-background);
+		color: var(--button-color);
+		border-color: var(--button-border-color);
+	}
+}

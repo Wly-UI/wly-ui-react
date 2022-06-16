@@ -1,0 +1,42 @@
+.ant-input.wly-input,
+.wly-input {
+	background-color: var(--input-background-color);
+	color: var(--input-color);
+	border: 1px solid var(--input-border);
+	&:focus,
+	.ant-input-focused {
+		border-color: var(--input-focus-border-color);
+		box-shadow: 0 0 0 2px var(--input-focus-box-shadow);
+	}
+	&:hover {
+		background-color: var(--input-hover-background-color);
+	}
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button {
+		height: auto;
+		-webkit-appearance: none;
+	}
+}
+.ant-input-group-wrapper.wly-input {
+	.ant-input-group {
+		background-color: var(--input-background-color);
+		color: var(--input-color);
+		.ant-input-group-addon {
+			background-color: var(--input-background);
+			color: var(--input-color);
+			border-color: var(--input-focus-border-color);
+			border-right: 1px solid var(--input-focus-border-color);
+		}
+		.ant-input {
+			background-color: var(--input-background-color);
+			color: var(--input-color);
+			border-color: var(--input-focus-border-color);
+			border-left: 1px solid var(--input-focus-border-color);
+		}
+		.ant-input:focus,
+		.ant-input-focused {
+			border-color: var(--input-focus-border-color);
+			box-shadow: 0 0 0 2px var(--input-focus-box-shadow);
+		}
+	}
+}

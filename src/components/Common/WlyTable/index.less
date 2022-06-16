@@ -1,0 +1,160 @@
+.ant-table-wrapper.wly-table {
+	.ant-table {
+		background: var(--table-body-background);
+		color: var(--table-body-color);
+		.ant-table-thead > tr > th {
+			color: var(--table-head-TrTh-color);
+			background: var(--table-head-TrTh-background);
+			border-bottom: 1px solid var(--table-head-TrTh-border-color);
+		}
+		.ant-table-tbody > tr > td {
+			border-bottom: 1px solid var(--table-body-TrTd-border-color);
+		}
+		.ant-table-tbody > tr.ant-table-row:hover > td,
+		.ant-table-tbody > tr > td.ant-table-cell-row-hover {
+			background: var(--table-body-TrTd-hover-background);
+		}
+		.ant-table-tbody > tr.ant-table-placeholder:hover > td {
+			background-color: var(--table-tbody-placeholder-hover-background-color);
+		}
+	}
+	.ant-table.ant-table-bordered
+		> .ant-table-container
+		> .ant-table-content
+		> table
+		> thead
+		> tr
+		> th,
+	.ant-table.ant-table-bordered
+		> .ant-table-container
+		> .ant-table-header
+		> table
+		> thead
+		> tr
+		> th,
+	.ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > thead > tr > th,
+	.ant-table.ant-table-bordered
+		> .ant-table-container
+		> .ant-table-summary
+		> table
+		> thead
+		> tr
+		> th,
+	.ant-table.ant-table-bordered
+		> .ant-table-container
+		> .ant-table-content
+		> table
+		> tbody
+		> tr
+		> td,
+	.ant-table.ant-table-bordered
+		> .ant-table-container
+		> .ant-table-header
+		> table
+		> tbody
+		> tr
+		> td,
+	.ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > tbody > tr > td,
+	.ant-table.ant-table-bordered
+		> .ant-table-container
+		> .ant-table-summary
+		> table
+		> tbody
+		> tr
+		> td,
+	.ant-table.ant-table-bordered
+		> .ant-table-container
+		> .ant-table-content
+		> table
+		> tfoot
+		> tr
+		> th,
+	.ant-table.ant-table-bordered
+		> .ant-table-container
+		> .ant-table-header
+		> table
+		> tfoot
+		> tr
+		> th,
+	.ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > tfoot > tr > th,
+	.ant-table.ant-table-bordered
+		> .ant-table-container
+		> .ant-table-summary
+		> table
+		> tfoot
+		> tr
+		> th,
+	.ant-table.ant-table-bordered
+		> .ant-table-container
+		> .ant-table-content
+		> table
+		> tfoot
+		> tr
+		> td,
+	.ant-table.ant-table-bordered
+		> .ant-table-container
+		> .ant-table-header
+		> table
+		> tfoot
+		> tr
+		> td,
+	.ant-table.ant-table-bordered > .ant-table-container > .ant-table-body > table > tfoot > tr > td,
+	.ant-table.ant-table-bordered
+		> .ant-table-container
+		> .ant-table-summary
+		> table
+		> tfoot
+		> tr
+		> td {
+		border-right: 1px solid var(--table-body-TrTd-border-color);
+	}
+	.ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table,
+	.ant-table.ant-table-bordered > .ant-table-container > .ant-table-header > table {
+		border-top: 10x solid var(--table-body-TrTd-border-color);
+	}
+	.ant-table.ant-table-bordered > .ant-table-container {
+		border-left: 1px solid var(--table-body-TrTd-border-color);
+	}
+	.ant-table-pagination.ant-pagination {
+		.ant-pagination-prev .ant-pagination-item-link,
+		.ant-pagination-next .ant-pagination-item-link {
+			color: var(--table-pagenation-color);
+			border-color: var(--table-pagenation-border-color);
+			&:hover {
+				color: var(--table-pagenation-hover-color);
+				border-color: var(--table-pagenation-hover-border-color);
+			}
+		}
+		.ant-pagination-disabled .ant-pagination-item-link,
+		.ant-pagination-disabled:hover .ant-pagination-item-link {
+			color: var(--table-pagenation-disabled-color);
+			border-color: var(--table-pagenation-disabled-border-color);
+		}
+		.ant-pagination-prev .ant-pagination-item-link {
+			background-color: var(--table-pagenation-prev-background-color);
+		}
+		.ant-pagination-next .ant-pagination-item-link {
+			background-color: var(--table-pagenation-next-background-color);
+		}
+		.ant-pagination-item {
+			background-color: var(--table-pagenation-item-background-color);
+			border: 1px solid var(--table-pagenation-item-border);
+			a {
+				color: var(--table-pagenation-item-color);
+			}
+			&:hover {
+				border-color: var(--table-pagenation-item-hover-border);
+				a {
+					color: var(--table-pagenation-item-hover-color);
+				}
+			}
+		}
+		.ant-pagination-item-active {
+			background: var(--table-pagenation-item-active-background);
+			border-color: var(--table-pagenation-item-active-border-color);
+			a {
+				color: var(--table-pagenation-item-active-color);
+			}
+		}
+	}
+}

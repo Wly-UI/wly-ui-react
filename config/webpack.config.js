@@ -14,6 +14,10 @@ module.exports = {
 		},
 		clean: true
 	},
+	externals: {
+		react: 'react',
+		'react-dom': 'react-dom'
+	},
 	experiments: { outputModule: true },
 	module: {
 		rules: [
