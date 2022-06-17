@@ -10,9 +10,12 @@ module.exports = {
 		filename: 'index.js', // 文件名
 		path: path.resolve(__dirname, '../dist'), // 文件输出地址
 		library: {
-			type: 'module'
+			type: 'commonjs'
 		},
 		clean: true
+	},
+	optimization: {
+		minimize: false
 	},
 	externals: {
 		react: 'react',

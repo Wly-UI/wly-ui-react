@@ -5,10 +5,12 @@ import App from '../App';
 import DButton from 'src/views/DButton';
 import DNotiFiction from 'src/views/DNotifaation';
 import { DTable } from 'src/views/DTable';
-
+import { DModal } from 'src/views/DModal';
 import DInput from 'src/views/DInput';
 import DForm from 'src/views/DForm';
 import DTabs from 'src/views/DTabs';
+import { DPicker } from 'src/views/DPacker';
+import { DTooltip } from 'src/views/DTooltip';
 
 const routes: RoutersType = [
 	{
@@ -58,6 +60,21 @@ const routes: RoutersType = [
 				path: 'dtabs',
 				element: <DTabs />,
 				name: 'DTABS'
+			},
+			{
+				path: 'dmodal',
+				element: <DModal />,
+				name: 'DMODAL'
+			},
+			{
+				path: 'dtootip',
+				element: <DTooltip />,
+				name: 'DTOOLTIP'
+			},
+			{
+				path: 'dpicker',
+				element: <DPicker />,
+				name: 'DPICKER'
 			}
 		]
 	}
