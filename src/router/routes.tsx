@@ -11,6 +11,7 @@ import DForm from 'src/views/DForm';
 import DTabs from 'src/views/DTabs';
 import { DPicker } from 'src/views/DPacker';
 import { DTooltip } from 'src/views/DTooltip';
+import { Dselect } from 'src/views/DSelect';
 
 const routes: RoutersType = [
 	{
@@ -75,6 +76,11 @@ const routes: RoutersType = [
 				path: 'dpicker',
 				element: <DPicker />,
 				name: 'DPICKER'
+			},
+			{
+				path: 'dselect',
+				element: <Dselect />,
+				name: 'DSELECT'
 			}
 		]
 	}

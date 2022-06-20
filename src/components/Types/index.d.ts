@@ -10,3 +10,4 @@ export { default as WlyTabs } from './WlyTabs';
 export { default as WlyModal } from './WlyModal';
 export { default as WlyTooltip } from './WlyToolTip';
 export { default as WlyHexColorPicker } from './WlyHexColorPicker';
+export { default as WlySelect } from './WlySelect';

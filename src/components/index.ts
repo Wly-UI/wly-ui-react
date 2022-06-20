@@ -8,6 +8,7 @@ import { WlyTabs, WlyTabPane } from './Common/WlyTabs';
 import { WlyModal } from './Common/WlyModal';
 import { WlyHexColorPicker } from './Common/WlyHexColorPicker';
 import { WlyTooltip } from './Common/WlyToolTip';
+import { WlySelect, WlySelectOption } from './Common/WlySelect';
 export {
 	wlyNotiFiction,
 	WlyButton,
@@ -19,5 +20,7 @@ export {
 	WlyTabPane,
 	WlyModal,
 	WlyHexColorPicker,
-	WlyTooltip
+	WlyTooltip,
+	WlySelect,
+	WlySelectOption
 };
