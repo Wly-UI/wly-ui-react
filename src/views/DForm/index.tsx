@@ -11,9 +11,13 @@ const DForm = () => {
 				<WlyFormItem label={'username'} name='userName'>
 					<WlyInput />
 				</WlyFormItem>
+				<WlyFormItem label={'required'} name='required' rules={[{ required: true }]}>
+					<WlyInput />
+				</WlyFormItem>
 			</WlyForm>
 			<WlyButton
 				onClick={() => {
+					form.validateFields();
 					console.log(form.getFieldsValue());
 				}}>
 				submit
