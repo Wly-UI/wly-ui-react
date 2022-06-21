@@ -5,4 +5,22 @@ import { WlyTable } from './Common/WlyTable';
 import { WlyInput } from './Common/WlyInput';
 import { WlyForm, WlyFormItem } from './Common/WlyForm';
 import { WlyTabs, WlyTabPane } from './Common/WlyTabs';
-export { wlyNotiFiction, WlyButton, WlyTable, WlyInput, WlyForm, WlyFormItem, WlyTabs, WlyTabPane };
+import { WlyModal } from './Common/WlyModal';
+import { WlyHexColorPicker } from './Common/WlyHexColorPicker';
+import { WlyTooltip } from './Common/WlyToolTip';
+import { WlySelect, WlySelectOption } from './Common/WlySelect';
+export {
+	wlyNotiFiction,
+	WlyButton,
+	WlyTable,
+	WlyInput,
+	WlyForm,
+	WlyFormItem,
+	WlyTabs,
+	WlyTabPane,
+	WlyModal,
+	WlyHexColorPicker,
+	WlyTooltip,
+	WlySelect,
+	WlySelectOption
+};

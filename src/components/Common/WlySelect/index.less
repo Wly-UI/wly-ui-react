@@ -1,0 +1,39 @@
+.ant-select.wly-select {
+	color: var(--select-selector-color);
+	&:not(.ant-select-customize-input) .ant-select-selector {
+		background-color: var(--select-selector-background-color);
+		border-color: var(--select-selector-border-color);
+	}
+	.ant-select-clear {
+		background-color: var(--select-selector-clear-bacground-color);
+		color: var(--select-selector-clear-color);
+	}
+}
+.wly-select.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+	.ant-select-selector {
+	border-color: var(--select-selector-focus-border-color);
+	box-shadow: 0 0 0 2px var(--select-selector-focus-box-shadow);
+}
+.wly-select.ant-select-multiple .ant-select-selection-item {
+	background-color: var(--select-selector-item-background-color);
+	border-color: var(--select-selector-item-border-color);
+	.ant-select-selection-item-remove {
+		color: var(--select-selector-item-colose-color);
+	}
+}
+.ant-select-dropdown.wly-select-drop {
+	background-color: var(--select-dropdown-background-color);
+
+	.ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+		background-color: var(--select-dropdown-item-hover-background-color);
+	}
+	.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+		background-color: var(--select-dropdown-item-active-background-color);
+		.ant-select-item-option-state {
+			color: var(--select-dropdown-item-state-active-color);
+		}
+	}
+	.ant-select-item {
+		color: var(--select-dropdown-item-color);
+	}
+}
